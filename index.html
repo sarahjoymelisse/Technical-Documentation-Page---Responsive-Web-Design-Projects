@@ -1,0 +1,493 @@
+<html>
+<title>bla</title>
+  <head>
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+  </head>
+<body>
+
+<nav id="navbar">
+  <header>SYSTEMS SECURITY</header>
+
+  <ul>
+
+    <li><a class="nav-link" href="#Introduction">Computer Security Concepts
+  </a></li>
+    <li><a class="nav-link" href="#lesson2">Tenets of Information System Security
+  </a></li>
+    <li><a class="nav-link" href="#lesson3">Seven Domains of Typical IT Infrastructure
+  </a></li>
+
+
+
+</ul>
+</nav>
+
+<main id="main-doc">
+
+  <section class="main-section" id="Introduction">
+    <header>Computer Security Concepts</header>
+    <article>
+
+      <h3>What is Computer Security?</h3>
+      <li>
+It refers to techniques for ensuring data stored in a computer cannot be read or compromised by any individuals without authorization.
+      </li> 
+      <li>
+        It involves encryption and password.
+      </li>
+
+      <h3>Security Terminology</h3>
+      <ul>1. ADVERSARY (THREAT AGENT)
+        <p>An entity that attacks or is threat to a system.</p> 
+      </ul>
+
+      <ul>2. ATTACK
+        <p>An assault on system security that derives from an intelligent data.
+      </p> 
+        <p>A deliberate attempt to evade security services and violate security policy of a system.
+      </p>
+      </ul>
+
+      <ul>3. COUNTER MEASURE
+        <p>An action or technique that reduces threat, a vulnerability or an attack by eliminating or preventing it, by minimizing the harm it can cause.
+      </p> 
+      </ul>      
+
+      <ul>4. RISK
+        <p>An expectation of loss expressed that a particular threat will exploit a particular vulnerability with a particular harmful result.
+      </p> 
+      </ul>
+
+      <ul>5. SECURITY POLICY
+        <p>Set of rules and practices that specifies how a system or an organization provides security services to protect sensitive and critical system resource.
+      </p> 
+      </ul>
+
+      <ul>6. THREAT 
+        <p>A potential violation of security, which exits when there is a circumstance, capability, action or event that could breach security and cause harm.
+      </p> 
+      </ul>
+
+      <ul>7. VULNERABILITY
+        <p>Flaw or weakness in a system design, implementation or operation and management that could be exploited to violate the systems security policy.
+      </p> 
+      </ul>
+
+      <h3>Vulnerability</h3>
+        <p> System resource vulnerabilities may be:</p>
+      <ul>Corrupted<p> Does the wrong thing or gives wrong answer.</ul>
+      <ul>Leaky<p>Someone who should not have access to the information will avail.</p></ul>
+      <ul>Unavailable<p> Otherwise very slow, using the system network is impossible</p></ul>
+
+      <h3>Types of Vulnerability</h3>
+      <ul>1. HARDWARE VULNERABILITIES
+        <p>Attack by adding devices, changing or removing them, intercepting the traffic from them, or flooding them with traffic until they are no longer function.
+      </p> 
+      </ul>
+
+      <ul>2. SOFTWARE VULNERABILITIES
+        <p>Softwares can be replaced, changed or destroyed maliciously, or it can be modified, deleted or misplaced accidentally whether intentional or not.
+      </p> 
+      </ul> 
+
+      <ul>3. DATA VULNERABILITIES
+        <p>Data have definite value, even though that value is often difficult to measure.</p> 
+      </ul>
+
+      <h3> Threats </h3>
+      <ul>1. INTERCEPTION
+        <p>Unauthorized party has gained access to an asset. The outside party can be a person, program or computing system.</p> 
+      </ul>                        
+ 
+      <ul>2. INTERRUPTION
+        <p>An  asset of the system may be lost, unavailable or unusable.</p> 
+      </ul> 
+
+      <ul>3. MODIFICATION
+        <p>Unauthorized party tampers with an asset.</p> 
+      </ul>      
+
+      <ul>4. FABRICATION
+        <p>Counterfeit objects on a system and intruder may insert spurious transaction to a network communication system or add records to an existing database.</p> 
+      </ul>   
+
+      <h3> Classification of Attacks </h3>
+      <ul>1. INSIDE ATTACK
+        <p>Initiated by an entity inside the security perimeter.</p> 
+      </ul>                        
+ 
+       <ul>2. OUTSIDE ATTACK
+        <p>Initiated from outside the perimeter by an unauthorized or illegitimate user of the system.</p> 
+      </ul>  
+
+      <h3> Types of Attacks </h3>
+      <ul>1. ACTIVE ATTACK
+        <p>Attempts to alter system resources or affect their operation </p> 
+        <li><i>Replay, Masquerade, Modification of Messages, Denial of Service</i></li>
+      </ul>                        
+ 
+       <ul>2. PASSIVE ATTACK
+        <p>Attempts to learn or make use of information from the system but does not affect system resources.</p> 
+        <li><i>Release of message contents, Traffic Analysis</i></li>
+      </ul> 
+
+      <h3> Attack Surfaces </h3>
+        <p>Consist of the reachable and exploitable vulnerabilities in a system.</p>                  
+       <ul>1. Network Attack Surface
+        <p>Vulnerabilities over an enterprise network, wide area network or the internet.</p> 
+      </ul>
+
+       <ul>2. Software Attack Software
+        <p>Vulnerabilities in the application utility or operating system code.</p> 
+      </ul>
+
+       <ul>3. Human Attack Surface
+        <p>Vulnerabilities created by personnel or outsiders, such as social engineering, human error and trusted insiders.</p> 
+      </ul>
+
+      <h3>Unauthorized Disclosure</h3>
+        <p>A threat to confidentiality, it results in various attacks like:</p>                  
+       <ul>1. Exposure
+        <p>Sensitive data is directly released to unauthorized entity.</p> 
+      </ul>
+
+       <ul>2. Interception
+        <p>An unauthorized entity directly accesses sensitive data in transit.</p> 
+      </ul>
+
+       <ul>3. Inference
+        <p>An unauthorized entity indirectly accesses sensitive data.</p> 
+      </ul>
+
+       <ul>4. Intrusion
+        <p>An unauthorized entity circumvents system security protection.</p> 
+      </ul>
+
+       <ul>3. Human Attack Surface
+        <p>Vulnerabilities created by personnel or outsiders, such as social engineering, human error and trusted insiders.</p> 
+      </ul>      
+
+      <h3>Deception</h3>
+        <p>Is a threat to either system integrity or data integrity; it results in various attacks like:</p>                  
+       <ul>1. Masquerade
+        <p>An unauthorized entity poses an authorized entity.</p> 
+      </ul>
+
+       <ul>2. Falsification
+        <p>False data deceives an authorized entity.</p> 
+      </ul>
+
+       <ul>3. Repudiation
+        <p>An entity deceives another by falsely denying responsibility for an act.</p> 
+      </ul>
+
+      <h3>Countermeasure</h3>
+        <p>It can be devised to the following:</p>                  
+       <li>1. Prevent a particular type of attack</li>
+       <li>2. Detect the attacker and the type of attack</li>
+       <li>3. Recover from the effects of the attack</li>
+</article>
+</section>
+
+  <section class="main-section" id="lesson2">
+    <header>Tenets of Information System Security</header>
+    <article>
+      <h3>CONFIDENTIALITY</h3>
+        <p>Guarding information from everyone except those with rights to it. Only authorized users can view the information.</p>    
+        <p>Confidential information includes the following:</p>              
+       <li>1. Private data of individuals</li>
+       <li>2. Intellectual property of businesses</li>
+       <li>3. National security for countries and governments</li>
+
+       <h3>Security Control Examples:</h3>
+       <ul>1. Conduct annual security awareness
+          <p>This helps remind about proper handling of private data. It drives awareness of the organization’s framework of security policies, standards, procedures and guidelines.</p>
+         </ul>
+
+       <ul><b>2. Create IT security policy framework in place</b>
+          <p>A policy framework is like an outline that identifies where security controls should be used.</p>
+         </ul>
+
+       <ul>3. Designing a layered security solution for an IT Infrastructure
+          <p>The more layers or compartments that block or protect private data and intellectual property, the more difficult the data property are to find and steal.</p>
+         </ul>
+
+       <ul>4. Performing periodic security risk assessments, audits, and penetration test on websites and IT infrastructure
+          <p> This is how security professionals verify that they have properly installed the controls.</p>
+         </ul>
+
+       <ul>5. Enabling security incident and event monitoring at your internet entry and exit points
+          <p>This is like using a microscope to see what is coming in and going out.</p>
+         </ul>
+
+       <ul>6. Using automated workstation and server antivirus and malicious software protection
+          <p>This is the way to keep viruses and malicious software out of your computer.</p>
+         </ul>
+
+       <ul>7. Using more stringent access controls beyond a logon ID and password for sensitive systems, application and data.
+          <p>Logon IDs with passwords are only one check of the user. Access to more sensitive systems should have a second test to confirm the users identity.</p>
+         </ul>
+
+       <ul>8. Minimizing software weaknesses in your computers and servers by updating them with patches and security fixes.
+          <p>This is the way to keep your operating system and application software up to date.</p>
+         </ul>
+
+      <center>
+        <img src="1.png"/>
+      </center>
+
+      <h3>INTEGRITY</h3>
+      <li>Only authorized users can change information. It deals with the validity and accuracy of data.</li>
+      <li>Data lacking integrity that is, data that are not accurate or not valid are of no use.<br>
+        <i> Examples: Copyrights, Patents, Secret Formulas,   Customer Databases
+</i></li> 
+
+      <h3>AVAILABILITY</h3>
+      <li>Information is accessible by authorized users whenever they request the information.</li>
+      <li>Expressed as the amount of time users can used the system, application and data.</li>
+
+      <h3>COMMON AVAILABILITY TIME MEASUREMENTS</h3>
+      <ul>1. Uptime
+      <p>The total amount of time that a system, application and data are accessible. Uptime is typically measured in units of seconds, minutes and hours within a given calendar month. Often uptime is expressed as a percentage of time available. E.g. 99.5 percent uptime.</p>
+      </ul>
+
+      <ul>2. Downtime
+      <p>It is the total amount of time that a system, application and data are not accessible. Downtime also is measured in units of seconds, minutes and hours for a calendar month.</p>
+      </ul>      
+
+
+      <ul>3. Availability
+      <p>The probability that a system will work as required when required during the period of a mission</p>
+      <p>Availability is a mathematical calculation where <b> A=(Total Uptime) / (Total Uptime + Total Downtime) </b></p>
+      </ul>    
+
+      <ul>4. Mean time to failure (MTTF)
+      <p>MTTF is the average amount of time between failures for a particular system during normal system operation.</p>
+      <p>MTTF = Total hours of operation ÷ Total assets in use</p>
+      <p>MTTF = 10,000 hours ÷ 40 assets</p>
+      <p>MTTF = 250 hours</p>
+      </ul> 
+
+
+      <ul>5. Mean time to repair (MTTR)
+      <p>MTTR is the average amount of time it takes to repair a system, application or component. The goal is to bring the system back-up quickly.</p>
+      </ul>   
+
+      <ul>6. Mean time between failures (MTBF)
+      <p>MTBF is the predicted amount of time between failures of an IT system during operation.</p>
+      </ul>   
+
+      <center>
+        <img src="2.png"/>
+      </center>
+
+      <ul>7. Recovery Time Objective
+      <p>The amount of time it takes to recover and make a system, application and data available for use after an outage.</p>
+      </ul>      
+
+      <center>
+        <img src="3.png"/>
+      </center>  
+    </article>
+  </section>
+
+
+  <section class="main-section" id="lesson3">
+    <header>Seven Domains of Typical IT Infrastructure</header>
+    <article>
+
+    <h3>1. USER DOMAIN</h3>
+    <p>This Domain is where you find an Acceptable Use Policy, it defines what users are allowed and not allowed to do with organization owned IT Assets</p>
+    <center>
+      <img src="4.png"/>
+    </center>
+
+    <h3>2. WORKSTATION DOMAIN</h3>
+    <p> A workstation can be a desktop computer, laptop computer, a special purpose terminal or ant device that connects to your network.</p>
+
+    <h3>3. LAN DOMAIN</h3>
+    <p> Local Area Network (LAN) is a collection of computers connected to one another or to a common connection medium.</p>
+
+    <p><i>Physical Part of LAN Domain</i></p>
+    <ul>A. Network Interface Card
+      <p>The interface between the computer and the LAN physical media. The NIC has a 6 byte Media Access Control (MAC) layer address that serves as the NICs unique hardware identifier</p>
+    </ul>
+
+    <ul>B. Ethernet LAN
+      <p>This is a LAN solution based on the IEEE 802.3 CSMA/CD standard for 10/100/1000Mbps. Ethernet is the most popular LAN Standard.</p>
+    </ul>
+
+    <ul>C. Unshielded twisted-pair cabling
+      <p>This is the workstation cabling that uses RJ-45 connectors and jacks to physically connect to a 100Mbps/1Gbps/10Gbps. Most organization use CAT 5 and CAT 6  UTP transmission media to support high speed data communications.</p>
+    </ul>
+
+    <ul>D. LAN Switch
+      <p>This is the device that connects workstation into physical Ethernet LAN. A switch provides dedicated Ethernet LAN connectivity for workstations and servers providing maximum throughput and performance.</p>
+    </ul>
+
+    <ul>E. File Server and Print Server
+      <p>These are high powered computers that provide file sharing and data storage for users within a department. Print servers support shared printer use within a department.</p>
+    </ul>
+
+    <ul>F. Wireless Access Point (WAP)
+      <p>For wireless LANs (WLANs), radio transceivers are used to transmit IP packets from a WLAN NIC to WAP.  The WAP transmits WLAN signals for mobile laptops to connects. The WAP connects back to the LAN switch using the UTP Cables.</p>
+    </ul>
+
+    <p><i>Logical Part of LAN Domain</i></p>
+    <ul>A. System Administration
+      <p>Setup of user LAN accounts with logon ID and password access controls. </p>
+    </ul>
+
+    <ul>B. Design of directory and file services
+      <p>The servers, directories and folders to which the user can gain access.</p>
+    </ul>
+
+    <ul>C. Configuration of workstation and server TCP/IP software and communication protocols
+      <p>This involves IP addressing, the IP default gateway router, subnet mask address, etc. The IP default gateway router acts as the entry/exit to the LAN.</p>
+    </ul>
+
+    <ul>D. Design of server disk storage space; backup and recovery user data
+      <p>Provision for user data files on LAN disk storage areas where data are backed up and archived daily. If data loss or corruption, data files can be recovered from backup files.</p>
+    </ul>
+
+    <ul>E. Design of virtual LAN (VLANs)
+      <p>With Layer 2 and Layer 3 LAN switches, Ethernet ports can be configured to be on the same VLAN, even though they may be connected to different physically connected LANs.</p>
+    </ul>
+
+    <h3>4. WAN DOMAIN</h3>
+    <p> This domain connects remote location. As network cost drop, organization can afford faster internet and WAN connection. Most telecommunication today provide the following service:</p>
+
+    <ul>a. Nationwide Optical Backbones (VLANs)
+      <p>Optical backbone trunks for private optical backbone networks.</p>
+    </ul>    
+
+    <ul>b. End-to-end IP Transport
+      <p>IP services and connectivity using the service providers IP networking infrastructure.</p>
+    </ul>  
+
+    <ul>c. Multi-site WAN cloud services
+      <p>IP services and connectivity offered for multi-site connectivity such as multi-protocol label switching (MPLS) WAN services. MPLS uses labels or tags to make virtual connections between endpoints in a WAN.</p>
+    </ul>  
+
+    <ul>d. Metropolitan Ethernet LAN connectivity
+      <p>Ethernet LAN connectivity offered within a city’s area network.</p>
+    </ul>  
+
+    <ul>e. Dedicated Internet Access
+      <p>A broadband Internet communication link usually shared among an organization.</p>
+    </ul>
+
+    <ul>f. Managed Services
+      <p>Router management and security appliance management 24 x 7 x 365.</p>
+    </ul>
+
+    <h3>5. LAN to WAN DOMAIN</h3>
+    <p>The LAN to WAN domain is where the IT Infrastructure links to a wide area network and the Internet. The Internet is open, public and easily accessible by anyone. </p>
+    <p>Network applications uses two common transport protocols such as Transmission Control Protocol (TCP) and User Datagram Protocol (UDP). Both TCP and UDP use port numbers to identify application or function.</p>
+
+    <p><i>Examples of common TCP and UDP port numbers:</i></p>
+    <ul>a. Port 80: Hyper Text Transfer Protocol (HTTP)
+      <p>The communication protocol between web browsers and websites with data in cleartext.</p>
+    </ul>      
+
+    <ul>b. Port 20: File Transfer Protocol
+      <p>A  protocol for performing file transfers. FTP uses TCP as a connection oriented data transmission but in cleartext. Connection oriented means individuals packets are numbered and acknowledged as being received to increase integrity of the file transfer.</p>
+    </ul> 
+
+    <ul>c. Port 69: Trivial File Transfer Protocol
+      <p>A protocol for performing file transfer. TFTP utilized UDP as a connectionless data transmission but in cleartext. This is used for small and quick file transfers given that it does not guarantee individual packet delivery.</p>
+    </ul> 
+
+    <ul>d. Port 23: Terminal (Telnet)
+      <p>A network protocol for performing remote terminal access to another device. Telnet uses TCP and sends data in cleartext.</p>
+    </ul> 
+
+    <ul>e. Port 22: Secure Shell
+      <p>This is a network protocol for performing remote terminal access to another device. SSH encrypts the data transmission for maintaining confidentiality of communications.</p>
+    </ul> 
+
+
+    <h3>6. REMOTE ACCESS DOMAIN</h3>
+      <p>Remote access is critical for staff members who work in the field or from home.</p>
+
+      <p>Global access makes it easy to connect to the Internet, email and other business applications anywhere your can find a Wireless Fidelity (WIFI) hotspot.</p>
+
+      <p>This domain is important, but dangerous to use. It introduces many risk and threats from the internet.</p>
+    </ul> 
+
+    <p><i>Most of the workers depend on the following:</i></p>
+    <ul>a. Highly available cellphone service
+      <p>Mobile workers need cellphone service to get in touch with office and support teams.</p>
+    </ul>
+
+    <ul>b. Real-time access for critical communication
+      <p>Use of text messaging or IM chat on cell phones provides quick answers to short questions and does not require users to completely interrupt what they are doing.</p>
+    </ul>
+
+    <ul>c. Access to email from mobile device
+      <p>Integration of email with cellphones, smartphones, personal data assistants (PDAs) or blackberry devices provides quick response to important email messages.</p>
+    </ul>
+
+    <ul>d. Broadband WiFi Internet access
+      <p>Some nationwide service providers now offer WiFi broadband access cards. They allow wireless access in major metro areas.</p>
+    </ul>
+
+    <ul>e. Local WiFi hotspot
+      <p>WiFi hotspot are abundant, including airports, libraries, coffee shops and retilers. While most are free, some require that users pay for access.</p>
+    </ul>
+
+    <ul>f. Broadband Internet access to home office
+      <p>Staffers who work from home require broadband internet access. This is usually bundled with VOIP telephone service and digital TV service.</p>
+    </ul>
+
+    <ul>g. Secure remote access to a company’s IT infrastructure
+      <p>Remote workers require secure VPN tunnels to encrypt all IP data transmission through the public Internet. This is critical if private data is being accessed remotely.</p>
+    </ul>
+
+<p><i>Remote access security controls must use the following:</i></p>
+
+    <ul>1. Identification
+      <p>The process of providing identifying information such as a username, a logon ID or an account number.</p>
+    </ul>
+
+    <ul>2. Authentication
+      <p>The process for proving that a remote user is who the user claims to be. The most common authentication method is supplying a password. A token can be hardware or software.</p>
+    </ul>
+
+
+    <ul>3. Authorization
+      <p>The process of granting rights to use an organization’s IT assets, systems, application, and data to a specific user.</p>
+    </ul>
+
+    <ul>4. Accountability
+      <p>The process of recording user actions. The recorded information is often used to link users to system events.</p>
+    </ul>
+
+    <h3>7. SYSTEM AND APPLICATION DOMAIN</h3>
+    <p>This domain holds all the mission control critical systems, applications, and data. Authorized users may have access to many components in this domain.</p>
+    <p>It consists of hardware and operating software, applications and data. It also includes hardware and their logical deign. It must be secured both physically and logically.</p>
+
+    <ul>The responsibility for Systems/Application Domain lies with the director of systems and applications and the director of software development which includes the following:
+    <p>Server Systems Administration</p>
+    <p>Database design and management</p>
+    <p>Designing access rights to systems and applications</p>
+    <p>Software Development</p>
+    <p>Software Development Project Management</p>
+    <p>Software Coding and Testing</p>
+    <p>Quality Assurance and Production Support</p>
+    </ul>
+
+
+    </article>
+  </section>
+
+
+
+
+</main>
+
+</body>
+</html>
