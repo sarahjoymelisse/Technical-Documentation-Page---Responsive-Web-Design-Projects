@@ -2,24 +2,53 @@
 <title>bla</title>
   <head>
 
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
   </head>
 <body>
 
 <nav id="navbar">
-  <header>SYSTEMS SECURITY</header>
+<header class="header">
+  <a class="logo">SYSTEM SECURITY</a>
+  <input class="menu-btn" type="checkbox" id="menu-btn" />
+  <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
 
-  <ul>
-
-    <li><a class="nav-link" href="#Introduction">Computer Security Concepts
-  </a></li>
-    <li><a class="nav-link" href="#lesson2">Tenets of Information System Security
-  </a></li>
-    <li><a class="nav-link" href="#lesson3">Seven Domains of Typical IT Infrastructure
+  <ul class="menu">
+    <li><a class="nav-link" href="#Introduction">
+      <span style ="color:#ff66a3">Computer Security Concepts</span>
   </a></li>
 
+    <li><a class="nav-link" href="#lesson2">
+      <span style ="color:#ff66a3">Tenets of Information System Security</span>
+  </a></li>
+
+    <li><a class="nav-link" href="#lesson3">
+      <span style ="color:#ff66a3">Seven Domains of Typical IT Infrastructure</span>
+  </a></li>
+
+     <li><a class="nav-link" href="#chapter2lesson1">
+      <span style ="color:#2eb8b8">Basic Cryptographic Principles, Concepts and Terminologies
+  </a></li>
+
+     <li><a class="nav-link" href="#chapter2lesson2">
+      <span style ="color:#2eb8b8">Types of Ciphers, Symmetric and Asymetric and Keys Management</span>
+  </a></li>
+
+     <li><a class="nav-link" href="#chapter3lesson1">
+      <span style ="color:#ff6666">Drive and Security of Information System</span>
+  </a></li>
+
+     <li><a class="nav-link" href="#chapter3lesson2">
+      <span style ="color:#ff6666">Business Impact Analysis</span>
+  </a></li>
+
+     <li><a class="nav-link" href="#chapter3lesson3">
+      <span style ="color:#ff6666">Access Controls</span>
+  </a></li>
 
 
 </ul>
@@ -27,17 +56,18 @@
 
 <main id="main-doc">
 
+
   <section class="main-section" id="Introduction">
     <header>Computer Security Concepts</header>
     <article>
 
       <h3>What is Computer Security?</h3>
-      <li>
+      <p>
 It refers to techniques for ensuring data stored in a computer cannot be read or compromised by any individuals without authorization.
-      </li> 
-      <li>
+      </p>
+      <p>
         It involves encryption and password.
-      </li>
+      </p>
 
       <h3>Security Terminology</h3>
       <ul>1. ADVERSARY (THREAT AGENT)
@@ -186,9 +216,9 @@ It refers to techniques for ensuring data stored in a computer cannot be read or
 
       <h3>Countermeasure</h3>
         <p>It can be devised to the following:</p>                  
-       <li>1. Prevent a particular type of attack</li>
-       <li>2. Detect the attacker and the type of attack</li>
-       <li>3. Recover from the effects of the attack</li>
+       <p>1. Prevent a particular type of attack</p>
+       <p>2. Detect the attacker and the type of attack</p>
+       <p>3. Recover from the effects of the attack</p>
 </article>
 </section>
 
@@ -198,9 +228,9 @@ It refers to techniques for ensuring data stored in a computer cannot be read or
       <h3>CONFIDENTIALITY</h3>
         <p>Guarding information from everyone except those with rights to it. Only authorized users can view the information.</p>    
         <p>Confidential information includes the following:</p>              
-       <li>1. Private data of individuals</li>
-       <li>2. Intellectual property of businesses</li>
-       <li>3. National security for countries and governments</li>
+       <p>1. Private data of individuals</p>
+       <p>2. Intellectual property of businesses</p>
+       <p>3. National security for countries and governments</p>
 
        <h3>Security Control Examples:</h3>
        <ul>1. Conduct annual security awareness
@@ -240,14 +270,14 @@ It refers to techniques for ensuring data stored in a computer cannot be read or
       </center>
 
       <h3>INTEGRITY</h3>
-      <li>Only authorized users can change information. It deals with the validity and accuracy of data.</li>
-      <li>Data lacking integrity that is, data that are not accurate or not valid are of no use.<br>
+      <p>Only authorized users can change information. It deals with the validity and accuracy of data.</p>
+      <p>Data lacking integrity that is, data that are not accurate or not valid are of no use.<br>
         <i> Examples: Copyrights, Patents, Secret Formulas,   Customer Databases
-</i></li> 
+</i></p> 
 
       <h3>AVAILABILITY</h3>
-      <li>Information is accessible by authorized users whenever they request the information.</li>
-      <li>Expressed as the amount of time users can used the system, application and data.</li>
+      <p>Information is accessible by authorized users whenever they request the information.</p>
+      <p>Expressed as the amount of time users can used the system, application and data.</p>
 
       <h3>COMMON AVAILABILITY TIME MEASUREMENTS</h3>
       <ul>1. Uptime
@@ -479,10 +509,617 @@ It refers to techniques for ensuring data stored in a computer cannot be read or
     <p>Software Coding and Testing</p>
     <p>Quality Assurance and Production Support</p>
     </ul>
+    </article>
+  </section>
 
+<section class="main-section" id="chapter2lesson1">
+    <header>Basic Cryptographic Principles, Concepts and Terminologies</header>
+    <article>
+    	<h3>What is Cryptography?</h3>
+    	<p>A Greek word means “secret writing”, it is use the term to refer to the science and art of transforming messages to make them secure and immune to attacks.</p>
+    	<center><img src="5.png"></center>
+
+    	<h3>PLAINTEXT AND CIPHERTEXT</h3>
+    	<ul>Plaintext and Ciphertext
+    		<p>The original message before being transformed is called plaintext. After the message is transformed is called ciphertext.</p>
+    		<p>The sender uses an encryption algorithm and the receiver uses the decryption algorithm.</p>
+    	</ul>
+
+    	<ul>What is Cipher?
+    	<p>Refer to encryption and decryption algorithm as ciphers. It is also used to refer different categories of algorithms in cryptography.</p>
+        </ul>
+
+    	<ul>What is a Key?
+    	<p>A number or setoff numbers that cipher as an algorithm operates on. </p>
+    	</ul>
+
+    	<h3>NEED OF ENCRYPTION</h3>
+
+    	<ul>1. CONFIDENTIALITY</ul>
+    	<ul>2. INTEGRITY</ul>
+    	<ul>3. AUTHENTICATION</ul>
+    	<ul>4. NON REPUDIATION</ul>
+    	<ul>5. ACCESS CONTROL</ul>
+    	<ul>6. AVAILABILITY</ul>
+
+    	<h3>Basic Terminologies</h3>
+    	<ul>1. Encryption
+    		<p>The process of encoding a message so that is meaning is not obvious.</p>
+    	</ul>
+
+    	<ul>2. Decryption
+    	<p>The reverse process, transforming an encrypted message back into its normal or original form</p>
+    	</ul>
+
+    	<ul>3. Cryptosystem
+    	<p>A system for encryption and decryption.</p>
+    	</ul>
+
+    	<ul>4. Encryption Algorithm
+		<p>The encryption involves a set of rules for how to encrypt the plaintext and how to decrypt the cipher text.</p>
+		</ul>
+
+		<ul>5. Cryptanalysis
+		<p>Cryptanalysis is an attempt to break the cipher text.
+		</p></ul>
+    </article>
+  </section>
+
+
+  <section class="main-section" id="chapter2lesson2">
+    <header>Types of Ciphers, Symmetric and Asymetric and Keys Management</header>
+    <article>
+    	<center>
+    	<ul>Cryptography</ul>
+    		<img src="6.png">
+		 </center>
+
+		 <center>
+		 	<ul>Symmetric-Key Cryptography</ul>
+		 	<img src="7.png">
+		 	<p>The same key is used by the sender (for encryption) and the receiver (for decryption). The key is shared.</p>
+		 
+
+
+		 	<ul>ASYMMETRIC-KEY CRYPTOGRAPHY</ul>
+		 	<p>Asymmetric cryptography, also known as public-key cryptography, a process that uses a pair of related keys -- one public key and one private key -- to encrypt and decrypt a message and protect it from unauthorized access or use.</p>
+		 	<ul>1. Private Key</ul>
+		 	<p>Kept by the receiver to decrypt the message. It is known only by the owner.</p>
+		 	<ul>2. Public Key</ul>
+		 	<p>A key that announced to the public. </p>
+		 	<p>In such a system, any person can encrypt a message using the receiver's public key, but that encrypted message can only be decrypted with the receiver's private key.</p>
+		 	<ul></ul>
+
+		 	<ul>TRADITIONAL CIPHERS</ul>
+		 		<img src="8.png">
+		 		<p>Traditional ciphers are character-oriented. The goal is to show how modern ciphers evolved from them. </p>
+		 	
+		 		<ul>1. Substitution Ciphers</ul>
+		 		<p>A substitution cipher substitutes one symbol with another. If the symbol in the plaintext are alphabetic characters, it will replace one character with one another. <i>Example: A and D = 3 and 7</i></p>
+
+		 		<ul>1.1 Monoalphabetic Cipher</ul>
+		 		<img src="9.png">
+		 		<p>In mono-alphabetic ciphers, each symbol in plain-text (eg; ‘o’ in ‘follow’) is mapped to one cipher-text symbol. No matter how many times a symbol occurs in the plain-text, it will correspond to the same cipher-text symbol.</p>
+
+		 		<ul>1.1.1 Shift Cipher</ul>
+		 		<img src="10.png">
+		 		<p>The simplest monoalphabetic cipher is probably the shift cipher.</p>
+		 		<p>The concept is to replace each alphabet by another alphabet which is ‘shifted’ by some fixed number between 0 and 25.</p>
+		 		<p>For this type of scheme, both sender and receiver agree on a ‘secret shift number’ for shifting the alphabet. This number which is between 0 and 25 becomes the key of encryption.</p>
+
+		 		<ul>1.2 Polyalphabetic Cipher</ul>
+		 		<img src="11.png">
+		 		<p>Poly-alphabetic ciphers, every symbol in plain-text is mapped to a different cipher-text symbol regardless of its occurrence. </p>
+		 		<p>Every different occurrence of a symbol has different mapping to a cipher-text.</p>
+
+		 		<ul>2. Transposition Ciphers</ul>
+		 		<img src="12.png">
+		 		<p>The transposition cipher does not deal with substitution of one symbol with another. </p>
+		 		<p>It focuses on changing the position of the symbol in the plain-text. </p>
+		 		<p>A symbol in the first position in plain-text may occur in fifth position in cipher-text. </p>
+
+		 		<ul>3. Caesar Cipher</ul>
+		 		<img src="13.png"><br>
+		 		<img src="14.png">
+		 		<p>The set of characters of plain text is replaced by any other character, symbols or numbers. It is a very weak technique of hiding text. </p>
+		 		<p>In Caesar’s cipher, each alphabet in the message is replaced by three places down.</p>
+
+		 		<ul>MODERN CIPHERS</ul>
+		 		<p>Traditional ciphers are character-oriented. The goal is to show how modern ciphers evolved from them.</p>
+		 		<p>It operates on binary bit sequences.</p>
+
+		 		<ul>1. XOR Cipher</ul>
+		 		<p>An encryption method used to encrypt data and is hard to crack by brute-force method, i.e generating random encryption keys to match with the correct one.</p>
+
+		 		<ul>2. Rotation (ROT) Cipher</ul>
+		 		<img src="15.png">
+		 		<p>ROT13 ("rotate by 13 places", sometimes hyphenated ROT-13) is a simple letter substitution cipher that replaces a letter with the 13th letter after it, in the alphabet. </p>
+		 		<p>ROT13 is a special case of the Caesar cipher which was developed in ancient Rome. </p>
+
+		 		<ul>3. Playfair Cipher</ul>
+		 		<img src="16.png">
+		 		<p>A manual symmetric encryption technique and was the first literal diagram substitution cipher.</p>
+		 		<p>The scheme was invented in 1854 by Charles Wheatstone, but bears the name of Lord Playfair for promoting its use. </p>
+		 		<img src="17.png">
+		 		<img src="18.png">
+
+		 		<ul>4. Block Ciphers</ul>
+		 		<p>A block cipher takes a block of plaintext bits and generates a block of ciphertext bits, generally of same size. </p>
+		 		<p>The size of block is fixed in the given scheme. The choice of block size does not directly affect to the strength of encryption scheme.</p>
+		 		<img src="19.png">
+		 		<img src="20.png">
+		 		<img src="21.png" height="500px;"> 
+
+		 		<ul>BLOCK CIPHER SCHEMES</ul>
+        <img src="22.png">
+        <img src="23.png" height="500px;">
+        <ul>1. Data Encryption Standard</ul>
+        <p>The Data Encryption Standard (DES) is a symmetric-key block cipher published by the National Institute of Standards and Technology (NIST).</p>
+        <p>DES is an implementation of a Feistel Cipher. It uses 16 round Feistel structure. The block size is 64-bit.</p>
+        <p>We have mention that DES uses a 56 bit key. Actually, the initial key consists of 64 bits.</p>
+        <p>However, before the DES process even starts, every 8th bit of the key is discarded to produce a 56 bit key. That is bit position 8, 16, 24, 32, 40, 48, 56 and 64 are discarded.</p>
+
+        <ul>2. Triple DES</ul>
+        <img src="24.png">
+        <p>It is a variant scheme based on repeated DES applications. It is still a respected block ciphers but inefficient compared to the new faster block ciphers available.</p>
+        <p>It is a variant scheme based on repeated DES applications. It is still a respected block ciphers but inefficient compared to the new faster block ciphers available.</p>
+        <p><i>The encryption-decryption process is as follows:</i></p>
+        <p>Encrypt the plaintext blocks using single DES with key K1.</p>
+        <p>Now decrypt the output of step 1 using single DES with key K2.</p>
+        <p>Finally, encrypt the output of step 2 using single DES with key K3.</p>
+        <p>The output of step 3 is the ciphertext.</p>
+        <p>Decryption of a ciphertext is a reverse process. User first decrypt using K3, then encrypt with K2, and finally decrypt with K1</p>
+
+        <ul>3. Advanced Encryption Standard (AES)</ul>
+        <img src="25.png">
+        <img src="26.png">
+        <p>The more popular and widely adopted symmetric encryption algorithm likely to be encountered nowadays is the Advanced Encryption Standard (AES). It is found at least six time faster than triple DES.</p>
+        <p><i>The features of AES are as follows:</i></p>
+        <p>Symmetric key symmetric block cipher</p>
+        <p>128-bit data, 128/192/256-bit keys</p>
+        <p>Stronger and faster than Triple-DES</p>
+        <p>Provide full specification and design details</p>
+        <p>Software implementable in C and Java</p>
+
+        <ul>Byte Substitution (SubBytes)</ul>
+        <img src="27.png">
+        <p>The 16 input bytes are substituted by looking up a fixed table (S-box) given in design. The result is in a matrix of four rows and four columns.</p>
+
+        <ul>Shiftrows</ul>
+        <img src="28.png">
+        <p>Each of the four rows of the matrix is shifted to the left. Any entries that ‘fall off’ are re-inserted on the right side of row.</p>
+        <p><i>Shift is carried out as follows:</i></p>
+        <p>First row is not shifted.</p>
+        <p>Second row is shifted one (byte) position to the left.</p>
+        <p>Third row is shifted two positions to the left.</p>
+        <p>Fourth row is shifted three positions to the left.</p>
+        <p>The result is a new matrix consisting of the same 16 bytes but shifted with respect to each other.</p>
+
+        <ul>MixColumns</ul>
+        <p>Each column of four bytes is now transformed using a special mathematical function. </p>
+        <p>This function takes as input the four bytes of one column and outputs four completely new bytes, which replace the original column. </p>
+
+
+        <ul>Addroundkey</ul>
+        <img src="29.png">
+        <p>The 16 bytes of the matrix are now considered as 128 bits and are XORed to the 128 bits of the round key. If this is the last round then the output is the ciphertext. </p>
+        <p>Otherwise, the resulting 128 bits are interpreted as 16 bytes and we begin another similar round.</p>
+
+
+        <ul>Advanced Encryption Standard (AES) Decryption Process</ul>
+        <p>The process of decryption of an AES ciphertext is similar to the encryption process in the reverse order. </p>
+        <p>Each round consists of the four processes conducted in the reverse order −</p>
+		 		<p><i>Add round key</i></p>
+        <p><i>Mix columns</i></p>
+        <p><i>Shift rows</i></p>
+        <p><i>Byte substitution</i></p>
+
+        <ul>4. International Data Encryption Algorithm (IDEA)</ul>
+        <img src="30.png">
+        <p>It is a sufficiently strong block cipher with a block size of 64 and a key size of 128 bits.</p>
+        <p>A number of applications use IDEA encryption, including early versions of Pretty Good Privacy (PGP) protocol. The use of IDEA scheme has a restricted adoption due to patent issues.</p>
+        <p><i>The Simplified International Data Encryption Algorithm (IDEA) is a symmetric key block cypher that:</i></p>
+        <p>uses a fixed-length plaintext of 16 bits and</p>
+        <p>encrypts them in 4 chunks of 4 bits each</p>
+        <p>to produce 16 bits ciphertext.</p>
+        <p>The length of the key used is 32 bits.</p>
+        <p>The key is also divided into 8 blocks of 4 bits each. </p>
+
+        <ul>KEYS AND KEYSPACE</ul>
+        <img src="31.png">
+        <p><b>Key</b> is the sequence that controls the operation and behavior of the cryptographic algorithm.</p>
+        <p>Rules used in algorithms to convert a document into a secret document.</p>
+        <p><b>Keyspace</b> is the range of possible values of the key.</p>
+
+        <p><i>Two types of Keys:</i></p>
+        <ul>1. Symmetric </ul>
+        <p>The same key is used both for encryption and decryption.
+          <i>Ex. DES, Triple DES, AES, Blowfish</i></p>
+        <ul>2. Assymetric </ul>
+        <p>Different keys are used for encryption and decryption
+          <i>Ex.  RSA (Rivest-Shamir-Adleman of MIT)
+        PGP (Phil Zimmerman of MIT)</i></p>
+        <img src="32.png">
+        <p><i>The most important properties of public key encryption scheme are:</i></p>
+        <p>Different keys are used for encryption and decryption. This is a property which set this scheme different than symmetric encryption scheme.</p>
+        <p>Each receiver possesses a unique decryption key, generally referred to as his private key.</p>
+        <p>Receiver needs to publish an encryption key, referred to as his public key.</p>
+        <p>Some assurance of the authenticity of a public key is needed in this scheme to avoid spoofing by adversary as the receiver. Generally, this type of cryptosystem involves trusted third party which certifies that a particular public key belongs to a specific person or entity only.</p>
+        <p>Encryption algorithm is complex enough to prohibit attacker from deducing the plaintext from the ciphertext and the encryption (public) key.</p>
+        <p>Though private and public keys are related mathematically, it is not be feasible to calculate the private key from the public key. In fact, intelligent part of any public-key cryptosystem is in designing a relationship between two keys.</p>
+
+        <h3>RSA Cryptosystem</h3>
+        <p>RSA algorithm is asymmetric cryptography algorithm. Asymmetric actually means that it works on two different keys i.e. Public Key and Private Key.</p>
+        <p>As the name describes that the Public Key is given to everyone and Private key is kept private.</p>
+
+        <p><i>An example of asymmetric cryptography:</i></p>
+        <p>A client (for example browser) sends its public key to the server and requests for some data.</p>
+        <p>The server encrypts the data using client’s public key and sends the encrypted data.</p>
+        <p>Client receives this data and decrypts it.</p>
+
+        <h3>Cryptography Hash Functions</h3>
+        <img src="33.png">
+        <p>Hash functions are extremely useful and appear in almost all information security applications.</p>
+        <p>A hash function is a mathematical function that converts a numerical input value into another compressed numerical value. The input to the hash function is of arbitrary length but output is always of fixed length.</p>
+        <p>Values returned by a hash function are called <b>message digest</b> or simply <b>hash values.</b></p>
+
+        <p><i>The typical features of hash functions are:</i>
+          <b>Fixed Length Output (Hash Value)</b></p>
+          <img src="34.png" height="500px;">
+        <p>Hash function coverts data of arbitrary length to a fixed length. This process is often referred to as hashing the data.</p>
+        <p>In general, the hash is much smaller than the input data, hence hash functions are sometimes called compression functions.</p>
+        <p>Since a hash is a smaller representation of a larger data, it is also referred to as a digest.</p>
+        <p>Hash function with n bit output is referred to as an n-bit hash function. Popular hash functions generate values between 160 and 512 bits.</p>
+
+        <h3>Message Digest (MD)</h3>
+        <img src="35.png">
+        <p>MD5 was most popular and widely used hash function for quite some years.</p>
+        <p>The MD family comprises of hash functions MD2, MD4, MD5 and MD6. It was adopted as Internet Standard RFC 1321. It is a 128-bit hash function.</p>
+        <p>MD5 digests have been widely used in the software world to provide assurance about integrity of transferred file.</p>
+        <p>For example, file servers often provide a pre-computed MD5 checksum for the files, so that a user can compare the checksum of the downloaded file to it.</p>
+        <p>In 2004, collisions were found in MD5. An analytical attack was reported to be successful only in an hour by using computer cluster. This collision attack resulted in compromised MD5 and hence it is no longer recommended for use.</p>
+
+
+        <h3>Secure Hash Algorithm (SHA)</h3>
+        <img src="36.png">
+        <p>Family of SHA comprise of four SHA algorithms; SHA-0, SHA-1, SHA-2, and SHA-3. Though from same family, there are structurally different.</p>
+        <ul>SHA-0:</ul>
+        <p>A retronym applied to the original version of the 160-bit hash function published in 1993 under the name "SHA".</p>
+        <p>It was withdrawn shortly after publication due to an undisclosed "significant flaw" and replaced by the slightly revised version SHA-1.</p>
+
+        <ul>SHA-1:</ul>
+        <p>A 160-bit hash function which resembles the earlier MD5 algorithm.</p>
+        <p>This was designed by the National Security Agency (NSA) to be part of the Digital Signature Algorithm. Cryptographic weaknesses were discovered in SHA-1, and the standard was no longer approved for most cryptographic uses after 2010.</p>
+
+        <ul>SHA-2:</ul>
+        <p>A family of two similar hash functions, with different block sizes, known as SHA-256 and SHA-512. They differ in the word size; SHA-256 uses 32-byte words where SHA-512 uses 64-byte words.</p>
+        <p>There are also truncated versions of each standard, known as SHA-224, SHA-384, SHA-512/224 and SHA-512/256. These were also designed by the NSA.</p>
+
+        <ul>SHA-3:</ul>
+        <p>A hash function formerly called Keccak, chosen in 2012 after a public competition among non-NSA designers.</p>
+        <p>It supports the same hash lengths as SHA-2, and its internal structure differs significantly from the rest of the SHA family.</p>
+
+        <h3>RIPEMD</h3>
+        <img src="37.png">
+        <p>The RIPEMD is an acronym for RACE Integrity Primitives Evaluation Message Digest.</p>
+        <p>This set of hash functions was designed by open research community and generally known as a family of European hash functions.</p>
+        <p>The <b>first RIPEMD</b> was not considered as a good hash function because of some design flaws which leads to some major security problems one of which is the size of output that is 128 bit which is too small and easy to break. In the next version: </p>
+
+        <ul>RIPEMD-128</ul>
+        <p>the design flaw is removed but the output is still 128 bit which makes it less secure.</p>
+        <ul>RIPEMD-160</ul>
+        <p>is the next version which increases the output length to 160 bit and increases the security level of the hash function.</p>
+        <p>This function is designed to work as a replacement for 128-bit hash functions MD4, MD5, and RIPEMD-128.</p>
+        <ul>RIPEMD-256 and RIPEMD-320</ul>
+        <p>are extension of RIPEMD-128 which provide same security as RIPEMD-160 and RIPEMD-128 which is designed for application which prefer large hash value rather than more security level.</p>
+
+        <h3>WHIRLPOOL</h3>
+        <p>Whirlpool is a cryptographic hash function created by Vincent Rijmen and Paulo S.L.M. Barreto. </p>
+        <p>It was first published in 2000 and revised in 2001 and 2003. It was derived form square and Advanced Encryption Standard. It is a block cipher hash function and designed after square block cipher.</p>
+        <p>It takes less than 256 bits length input and convert it in 512 bit hash.</p>
+        <p><i>The state of the function changes in ever round by using four operations:</i></p>
+        <ul>A. Mix Rows(MR)</ul>
+        <p>It is a right multiplication of each row by an 8*8 matrix.</p>
+        <ul>B. Substitute Bytes(SB)</ul>
+        <p>It is a simple table lookup and gives nonlinear mapping.</p>
+        <ul>C. Add Round Key(AK)</ul>
+        <p>In this the 512 bits of the round key is goes through XOR with 512 bit of current state.</p>
+        <ul>D. Shift Columns(SC)</ul>
+        <p>In this except the first column of current state are cyclically downward shifted.</p>
+
+        <h3>Applications of Hash Functions</h3>
+        <img src="38.png">
+        <ul>1. Password Storage</ul>
+        <p>Instead of storing password in clear, mostly all logon processes store the hash values of passwords in the file.</p>
+        <p>The Password file consists of a table of pairs which are in the form (user id, h(P)).</p>
+        <p>An intruder can only see the hashes of passwords, even if he accessed the password. He can neither logon using hash nor can he derive the password from hash value since hash function possesses the property of pre-image resistance.</p>
+
+        <ul>2. Data Integrity Check</ul>
+        <img src="39.png">        
+        <p>Data integrity check is a most common application of the hash functions. It is used to generate the checksums on data files. This application provides assurance to the user about correctness of the data.</p>
+
+        <h3>Digital Signatures</h3>
+        <p>A digital signature—a type of electronic signature—is a mathematical algorithm routinely used to validate the authenticity and integrity of a message (e.g., an email, a credit card transaction, or a digital document). </p>
+        <p>Digital signatures create a virtual fingerprint that is unique to a person or entity and are used to identify users and protect information in digital messages or documents.</p>
+        <p>In emails, the email content itself becomes part of the digital signature. Digital signatures are significantly more secure than other forms of electronic signatures.</p>
+
+        <ul>How do digital signatures work?</ul>
+        <p>Hash function</p>
+        <p>Public key cryptography</p>
+        <p>Public key infrastructure (PKI)</p>
+        <p>Certificate authority (CA) </p>
+        <p>Digital certificates</p>
+        <p>Pretty Good Privacy (PGP)/OpenPGP</p>
+		 </center>
+        </article>
+  </section>
+
+
+
+
+
+  <section class="main-section" id="chapter3lesson1">
+    <header>Drive and Security of Information System</header>
+    <article>
+
+      <h3>What is Risk Management?</h3>
+      <p>The process of identifying, assessing, prioritizing and addressing risk.</p>
+      <p><i>The risk equations is as follows:</i>Risk = Threats x Vulnerabilities</p>
+
+      <ul>Threat</ul>
+      <p>is the frequency of any event, the events in the threat equation are negative or adverse events.</p>
+
+      <ul>Vulnerability</ul>
+      <p>is the likelihood that a specific threat will successfully be carried out.</p>
+      <p>Multiplying the probability of a threat and the likelihood of a vulnerability yields the risk of that particular event.</p>
+
+      <h3>What is Risk Methodology?</h3>
+      <img src="30.png" height="500px">
+      <p>A description of how you will manage risk.</p>
+      <p>The risk methodology in your organization adopts should include the approach, required information and the techniques to address each risk.</p>
+      <p>The process of managing risk starts by identifying risk.</p>
+
+      <p><i>The steps in the risk management process are as follows:</i></p>
+      <h3>1. Risk Identification</h3>
+      <p> It is the process of determining and classifying the risk that  might affect your resources. The ability to identify risk a   key part of an effective risk-management process.</p>
+
+      <ul>1.1. Risk Register</ul>
+      <p>The result of the risk identification process is a list of identified risk.</p>
+      <p>It contains many different types of information, but should contain at least the following:</p>
+      <p><i>A description of the risk</i></p>
+      <p><i>The expected impact if the associated event occurs</i></p>
+      <p><i>The probability of the event occurring</i></p>
+      <p><i>Steps to mitigate risk</i></p>
+      <p><i>Steps to take should the event occur</i></p>
+      <p><i>Rank of the Risk</i></p>
+
+      <h3>2. Risk Analysis</h3>
+      <p>The estimation of the risk associated with identified hazards. It is qualitative or quantitative process of linking the likelihood of occurrence and severity of harms.</p>
+      <p>To identify, document and quantify potential risk to product due to any activity, process, testing or change and determine appropriate measures, with the objective of eliminating or reducing the risk.</p>
+
+      <h3>Benefits of Risk Analysis</h3>
+      <p>Identification of critical parameter</p>
+      <p>Improvement in product of quality and safety</p>
+      <p>To find out the risk of any change in activity, process, testing or change. Reduction in validation cost</p>
+      <p>Establishes a systematic, well-informed and thorough method of decision making which leads to greater transparency and predictability.</p>
+      <p>Increased knowledge of exposure to risk</p>
+      <p>Fosters quality by design, continuous improvement and new technology introduction, which generally leads to enhanced product quality.</p>
+
+      <h3>CLASSIFICATION OF METHODS</h3>
+
+  <table>
+  <tr>
+    <th>Qualitative</th>
+    <th>Quantitative</th>
+  </tr>
+
+  <tr>
+    <td>Risk-level</td>
+    <td>Project- level</td>
+  </tr>
+
+  <tr>
+    <td>Subjective evaluation of probability and impact</td>
+    <td>Probabilistic estimates of time and cost</td>
+  </tr>
+
+  <tr>
+    <td>Quick and easy to perform</td>
+    <td>Time consuming</td>
+  </tr>
+
+  <tr>
+    <td>No special software or tools required</td>
+    <td>Many require special tools</td>
+  </tr>
+
+
+</table>
+
+      <ul>Qualitative</ul>
+      <p>A project management technique concerned with discovering the probability of a risk event occurring and the impact risk will have if it does occur.</p>
+      <ul>Quantitative</ul>
+      <p>Further analysis of the highest priority risk during a numerical or quantitative rating is assigned in order to develop a probabilistic analysis of the project.</p>
+
+      <h3>3. Risk Response Planning</h3>
+      <p>Respond to the assessed risk by developing options and actions to reduce the probability or impact.</p>
+
+      <h3>Risk Response Strategies</h3>
+      <ul>✔ Avoid</ul>
+      <p>Focus on eliminating the cause and the threat</p>
+
+      <ul>✔ Mitigate</ul>
+      <p>There are certain risk that cannot be eliminated. However, their impact can be reduced. This is termed as mitigation of risk.</p>
+
+      <ul>✔ Transfer</ul>
+      <p>Transfer the risk to some other party. Insurance purchases, warranties, and guaranties.</p>
+
+      <h3>4. Risk Monitoring and Control</h3>
+      <p>It is the process of executing risk response plans, tracking identified risk, monitoring, residual risk, identifying new risk, and evaluating risk process effectiveness throughout the project.</p>
+
+      <h3>Purpose of Risk Monitoring</h3>
+      <p>Risk responses have been implemented as planned</p>
+      <p>Risk Response actions are as effective as expected or if new responses should be developed</p>
+      <p>Project assumptions are still valid.</p>
+      <p>Risk exposure has changed from its prior state, with analysis of trends.</p>
+      <p>A risk trigger has occurred.</p>
+      <p>Proper policies and procedures are followed.</p>
+      <p>New risk has occurred that were not previously identified</p>
+
+
+      <h3>Tool and Techniques for Monitoring Risk Monitoring and Control</h3>
+      <ul>1. Risk Reassessment</ul>
+      <p>Risk ratings and prioritization may change during the life of the project. Changes may require addition qualitative or quantitative risk analysis.</p>
+      <ul>2. Risk Audits</ul>
+      <p>Examine and document the effectiveness of the risk response planning in controlling risk and the effectiveness of the risk owner.</p>
+      <ul>3. Variance And Trend Analysis</ul>
+      <p>Used for monitoring overall project cost and schedule performance against baseline plan.</p>
+      <p>Significant deviation indicate that updated risk identification and analysis should be performed.</p>
+      <ul>4. Reserve Analysis</ul>
+      <p>As execution progresses, some risk events may happen with positive or negative impact on cost schedule contingency reserves.</p>
+      <p>Reserve analysis compares available reserves with amount of risk remaining at the time and determines whether reserves are sufficient.</p>
+      <ul>5. Status Meetings</ul>
+      <p>Risk Management can be addressed regularly by including the subject in project meetings.</p>
+
+      <h3>Outputs from Risk Monitoring and Control</h3>
+      <ul>1. Risk Register Updates</ul>
+      <p>Outcomes of risk reassessments, audits and risk reviews.</p>
+      <p>Actual outcome of risk, and of risk responses that becomes part of the project file to be utilized on future events.</p>
+      <ul>2. Corrective Action</ul>
+      <p>Corrective action consist of performing the contingency plan or workaround. Workarounds are previously unplanned responses to emerging risk.</p>
+      <p>Workarounds must be properly documented and incorporated into the project plan and risk response plan.</p>
+      <ul>3. Recommended  Preventive Actions</ul>
+      <p>Used to direct project towards compliance with the project management plan.</p>
+      <ul>4. Project Change Request</ul>
+      <p>Implementing contingency plans or workarounds frequently result in a requirement to change project plan to respond risk. The result is issuance of a change request that is managed by overall change control.</p>
+      <ul>5. Organizational Process Assets Updates</ul>
+      <p>Information gained through the risk management process are collected and kept for use by future.</p>
+      <ul>6. Project Management Plan Updates</ul>
+      <p>Update to the project management plan as result of approval requested changes.</p>
+      <img src="42.png">
+        </article>
+  </section>
+
+
+  <section class="main-section" id="chapter3lesson2">
+    <header>Business Impact Analysis</header>
+    <article>
+
+      <h3>What is Business Impact Analysis?</h3>
+      <p>The first step in developing plans to address interruptions is to identify those business functions that are crucial to your organization.</p>
+      <p>It is a formal analysis of an organization functions and activities that classifies them as critical or non-critical. BIA also helps define a road map for business continuity and disaster recovery.</p>
+
+      <h3>Recovery Goals and Requirements</h3>
+      <ul>1. Recovery Point Objective</ul>
+      <p>Measured in time, the RPO is the maximum amount of data loss that is acceptable. Depending on the nature of the function, staff members may be able to recreate or reenter data.</p>
+      <ul>2. Recovery Time Objective</ul>
+      <p>The RTO expresses the maximum allowable time to recover the function. Many less formal recovery plans overlook RTO. Time may be a critical factor, and specifying the requirements for recovery time helps determine the best recovery options.</p>
+      <ul>3. Business Recovery Requirements</ul>
+      <p>These requirements identify any other business functions that must already be in place for the specified recovery function to occur. Business recovery requirements help in determining the recovery sequence.</p>
+      <ul>4. Technical Recovery Requirements</ul>
+      <p>Technical recovery requirements define the technical prerequisites that are needed to support each critical business function. In most cases, technical recovery requirements dictate which IT Infrastructure components must be in place.</p>
+
+      <h3>What is Business Continuity Plan?</h3>
+      <p>It is a written plan for a structured response to any events that result in an interruption to critical business activities or functions.</p>
+      <p>Performing a business impact analysis is an important first step toward generating a business continuity plan in that the business impact analysis identifies the resources for which a business continuity plan is necessary.</p>
+      <p><i>The order of priorities for a well balance business continuity plan should be as follows:</i></p>
+      <p>Safety and well being of people</p>
+      <p>Continuity of critical business functions and operations, whether onsite or offsite, manual or dependent upon IT Systems.</p>
+      <p>Continuity of IT Infrastructure components within seven domains of an IT Infrastructure</p>
+
+      <h3>Disaster Recovery Plan</h3>
+      <p><b>What is Disaster Recovery Plan?</b></p>
+      <p>Directs the action necessary to recover resources after a disaster.</p>
+      <p>It is necessary to ensure the restoration of resources required by the Business Continuity Plan to an available state.</p>
+
+    <h3>Recovery Requirement Documentation</h3> 
+    <p>If the analysis phase is completed, documenting the business and technical requirements to initiate the implementation phase.</p>
+    <p><i>The information must be readily available for the disaster recovery team and includes the following:</i></p>
+    <p>Complete and accurate inventory of all facility assets</p>
+    <p>Complete and accurate inventory of IT assets, hardware, software, licenses, contracts and maintenance agreements.</p>
+    <p>Complete and accurate list of alternative office facilities and triage locations.</p>
+    <p>Complete and accurate list and contact details for business partners, vendors, service providers and suppliers.</p>
+    <p>Disaster recovery team member information – work and personal</p>
+    <p>Critical business functions and operations and required IT systems, applications, resources and data recovery.</p> 
+    <p>Retrieval of backed-up data for recovery and use.</p>
+    <p>Detailed IT system, application and data recovery procedures</p>
+    <p>Disaster recovery team members and resources needed of manual and workaround solutions</p>
+    <p>Recovery time objectives</p>
+    <p>Disaster recovery team members and resources needed of manual and workaround solutions</p>
+    <p>Recovery time objectives</p>
+
+    <h3>Critical Steps Responding to a Disaster Recovery</h3>
+    <ul>1. Ensure everyone safety first</ul>
+    <p>No other resource is an important as people.</p>
+    <ul>2. Respond to the disaster before pursuing recovery</ul>
+    <p>Require response and containment actions depend on the nature of the disaster and may not have anything to do with the recovery effort.</p>
+    <ul>3. Follow the disaster recovery plan</ul>
+    <p>Once your people are safe and you have to respond to the disaster, you can pursue recovery actions.</p>
+
+    <p><i>Data Center alternatives for disaster recovery</i></p>
+
+<table>
+
+  <tr>
+    <th>Option</th>
+    <th>Description</th>
+    <th>Comment</th>
+  </tr>
+
+  <tr>
+    <td>Hot Site</td>
+    <td>Facility with environmental utilities, hardware, software, and data that closely mirrors the original data center</td>
+    <td>Most expensive option, least switchover time</td>
+  </tr>
+
+  <tr>
+    <td>Warm Site</td>
+    <td>Facility with environmental utilities and basic computer hardware</td>
+    <td>Less expensive than a hot site but requires more time to load operating systems, software, data and configuration</td>
+  </tr>
+
+  <tr>
+    <td>Cold Site</td>
+    <td>Faculty with basic environmental utilities but no infrastructure components</td>
+    <td>Least expensive option but at the cost of the longest switchover time, since all hardware, software and data must be loaded at the new sit</td>
+  </tr>
+
+  <tr>
+    <td>Mobile Site</td>
+    <td>Trailer with necessary environmental utilities that can operate as a warm site or cold site</td>
+    <td>Very feasible, fairly short switchover time and widely varying cost based on size and capacity</td>
+  </tr>
+</table>
+
+  <h3>Various Types of Disaster Recovery Plans</h3>
+  <ul>1. Checklist Test</ul>
+  <p>This is the simplest type of DRP test. In a checklist test, each participant follows steps on the DRP checklist and provides feedback. You can use checklist test for DRP training and awareness</p>
+  <ul>2. Structured walk-through</ul>
+  <p>Structured walk through is similar to a checklist test, but the DRP team uses role playing to simulate a disaster and evaluate the DRP’s effectiveness. </p>
+  <p>This is also called a tabletop exercise or a conference room test.</p>
+  <ul>3. Simulation test</ul>
+  <p>A simulation test is more realistic than a structured walk-through.</p>
+  <p>In a simulation test, the DRP team uses role playing and follows through with as many of the effects of a simulated disaster as possible without affecting live operations.</p>
+  <ul>4. Parallel Test</ul>
+  <p>A parallel test evaluates the effectiveness of the DRP by enabling full processing capability at an alternate data center without interrupting the primary data center.</p>
+  <ul>5. Full-interruption test</ul>
+  <p> This is the only complete test. Full interruption test interrupt the primary data center and transfer processing capability to an alternate site</p>
+
+  <h3>Preventive Components of Disaster Recovery Plan</h3>
+  <p>1. Local mirroring of disk systems and use of data protection technology such as redundant array of independent disks (RAID) or storage area network (SAN) storage system.
+</p>
+  <p>2. Surge protectors to minimize the effect of power surges on delicate electronic equipment.</p>
+  <p>3. Uninterruptible power supply (UPS) and/or a backup generator to keep systems going in the event of power failure.</p>
+  <p>4.  Fire prevention systems.</p>
+  <p>5. Antivirus software and other security controls.</p>
+
+  <h3>What is Access Controls?</h3>
+  <p>Methods used to restrict and allow access to certain items, such as automobiles, homes, computers and even your smartphone.</p>
 
     </article>
   </section>
+
+
 
 
 
